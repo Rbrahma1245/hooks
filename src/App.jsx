@@ -1,15 +1,17 @@
 
 import './App.css'
 import UseCallback from './Components/Callback/UseCallback'
-// import UseMemo from './Components/UseMemo/UseMemo'
+import Factorial from './Components/UseMemo/Factorial'
+import UseMemo from './Components/UseMemo/UseMemo'
 
 function App() {
 
 
   return (
     <>
-    <UseCallback />
+    {/* <UseCallback /> */}
     {/* <UseMemo /> */}
+    <Factorial />
     </>
   )
 }

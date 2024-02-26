@@ -11,14 +11,11 @@ function UseMemo() {
     setCounterTwo(counterTwo + 1);
   };
 
-  const isEven = useMemo(()=>{
+  const isEven = useMemo(() => {
     let i = 0;
     while (i < 2000000000) i++;
-
     return counterOne % 2 === 0;
-
-  },[counterOne])
- 
+  }, [counterOne]);
 
   return (
     <div>
