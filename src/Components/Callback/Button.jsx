@@ -1,0 +1,15 @@
+/* eslint-disable react-refresh/only-export-components */
+import React from "react";
+
+
+// eslint-disable-next-line react/prop-types
+function Button({handleClick, children}) {
+  console.log("Rendering button", children);
+  return (
+    <div>
+      <button onClick={handleClick}>{children}</button>
+    </div>
+  )
+}
+
+export default React.memo(Button)
